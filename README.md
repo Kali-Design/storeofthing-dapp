@@ -1,4 +1,4 @@
-# **Automated Market Maker - AMM**
+# **Store of thing - DAPP **
 
 [![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -19,5 +19,5 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 Ce projet est sous licence `MIT` - voir le fichier [LICENSE.txt](https://github.com/Kali-Design/amm-V0.0/blob/main/LICENCE.txt) pour plus d'informations
-# AMM-BACK
+# Store of thing - BACK
 
