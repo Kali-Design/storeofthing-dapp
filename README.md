@@ -18,6 +18,6 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-Ce projet est sous licence `MIT` - voir le fichier [LICENSE.txt](https://github.com/Kali-Design/amm-V0.0/blob/main/LICENCE.txt) pour plus d'informations
+Ce projet est sous licence `MIT` - voir le fichier [LICENSE.txt](https://github.com/Kali-Design/storeofthing-dapp/blob/main/LICENCE.txt) pour plus d'informations
 # Store of thing - BACK
 
