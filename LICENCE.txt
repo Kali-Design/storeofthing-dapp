@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [DECEMBER 2021 - STORE OF THING - DAP] [KALI-DESIGN by Henri-Michel LEOCADIE]
+Copyright (c) [DECEMBER 2021 - STORE OF THING - DAPP] [KALI-DESIGN by Henri-Michel LEOCADIE]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
