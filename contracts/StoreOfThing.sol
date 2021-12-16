@@ -59,9 +59,10 @@ contract StoreOfThing {
     }
 
     function exchangeProduct(uint256 id, uint256 amount) public {
-        require(supplyOf(msg.sender, id) >= amount, "Store of thing:user supply empty for this product");
+        require(supplyOf(msg.sender, id) >= amount, "Store of thing : user supply empty for this product");
         _supplies[msg.sender][id] -= amount;
     }
 
+ 
 }
 
