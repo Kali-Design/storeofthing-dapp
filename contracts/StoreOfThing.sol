@@ -63,6 +63,62 @@ contract StoreOfThing {
         _supplies[msg.sender][id] -= amount;
     }
 
- 
+ function giveProduct(
+        address account,
+        uint256 id,
+        uint256 amount
+    ) public {
+        exchangeProduct(id, amount);
+        _supplies[account][id] -= amount;
+    }
+
+    function lendProduct(
+        address account,
+        uint256 id,
+        uint256 amount
+    ) public {
+        _debts[msg.sender][account][id].pending += amount;
+    }
+
+    function acceptProduct(address account, uint256 id) public {
+        uint256 amount = pendingDebt(account, msg.sender, id);
+        require(amount > 0, "Store of thing : account do not have lend this product to user");
+        _debts[account][msg.sender][id].current += amount;
+        _debts[account][msg.sender][id].pending -= amount;
+        giveProduct(account, id, amount);
+    }
+
+    function repayProduct(
+        address account,
+        uint256 id,
+        uint256 amount
+    ) public {
+        giveProduct(account, id, amount);
+        _debts[account][msg.sender][id].current -= amount;
+    }
+
+    function product(uint256 id) public view returns (Product memory) {
+        return _products[id];
+    }
+
+    function thingOf(address account, uint256 index) public view returns (thing memory) {
+        return _baskets[account][index];
+    }
+
+    function supplyOf(address account, uint256 id) public view returns (uint256) {
+        return _supplies[account][id];
+    }
+
+    function supplyOwner(uint256 id) public view returns (uint256) {
+        return _supplies[product(id).owner][id];
+    }
+
+    function pendingDebt(
+        address lender,
+        address borrower,
+        uint256 id
+    ) public view returns (uint256) {
+        return _debts[lender][borrower][id].pending;
+    }
 }
 
