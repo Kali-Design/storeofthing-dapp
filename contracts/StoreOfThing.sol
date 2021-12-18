@@ -120,5 +120,17 @@ contract StoreOfThing {
     ) public view returns (uint256) {
         return _debts[lender][borrower][id].pending;
     }
+
+     function currentDebt(
+        address lender,
+        address borrower,
+        uint256 id
+    ) public view returns (uint256) {
+        return _debts[lender][borrower][id].current;
+    }
+
+    function counter() public view returns (uint256) {
+        return _counter;
+    }
 }
 
