@@ -11,7 +11,7 @@ describe('StoreOfThing', async function () {
   const _MESSAGE = 'NEW MESSAGE';
 
   context('StoreOfThing initial state', function () {
-    // Execute this before each tests
+    
     beforeEach(async function () {
       this.storeofthing = await StoreOfThing.new(owner, MESSAGE, { from: dev });
     });
