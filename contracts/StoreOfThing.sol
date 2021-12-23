@@ -102,7 +102,7 @@ contract StoreOfThing {
     }
 
     function thingOf(address account, uint256 index) public view returns (thing memory) {
-        return _things[account][index];
+        return _thing[account][index];
     }
 
     function supplyOf(address account, uint256 id) public view returns (uint256) {
